@@ -53,17 +53,17 @@
     <main>
         <section id="hero">
             <div class="container">
-                <h1>Protect Student Privacy</h1>
-                <p>Join our campaign to end invasive monitoring in schools.</p>
-                <a href="#petitions" class="cta-button">View Petition</a>
+                <h1>Make Your Voice Heard</h1>
+                <p>Sign petitions to support causes you care about. No account required.</p>
+                <a href="#petitions" class="cta-button">View Petitions</a>
             </div>
         </section>
 
         <section id="petitions">
             <div class="container">
-                <h2>Active Petition</h2>
+                <h2>Active Petitions</h2>
                 <div class="petition-grid">
-                    <!-- Petition card will be dynamically inserted here -->
+                    <!-- Petition cards will be dynamically inserted here -->
                 </div>
             </div>
         </section>
@@ -71,19 +71,17 @@
         <section id="about">
             <div class="container">
                 <h2>About Us</h2>
-                <p>We are a group of concerned students, parents, and educators fighting for digital privacy rights in schools.</p>
+                <p>PetitionPower is dedicated to empowering individuals to make a difference. We provide a platform for people to create and sign petitions on issues that matter most to them.</p>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
                 <h2>Contact Us</h2>
-                <p>If you have any questions or need support, please reach out to us via email:</p>
-                <a href="mailto:nilecommun@gmail.com" id="email-link">nilecommun@gmail.com</a>
-                <p>We look forward to hearing from you!</p>
+              <a href="mailto:nilecommun@gmail.com">nilecommun@gmail.com</a>
             </div>
         </section>
-        
+    </main>
 
     <footer>
         <div class="container">
@@ -91,15 +89,13 @@
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#petitions">Petition</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#petitions">Petitions</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
         
-                <div class="footer-section">
-                </div>
             </div>
         </div>
     </footer>
@@ -108,18 +104,9 @@
         <div class="popup-content">
             <h2>Sign Petition</h2>
             <p id="petition-name"></p>
-            <p>To show your support, please send us an email at:</p>
-            <a href="mailto:nilecommun@gmail.com" id="email-link">nilecommun@gmail.com</a>
+            <input type="text" id="signer-name" placeholder="Your Name (optional)">
+            <button id="sign-petition">Sign</button>
             <button id="close-popup">Close</button>
-        </div>
-    </div>
-    
-
-    <div id="signatures-popup" class="popup">
-        <div class="popup-content">
-            <h2>Petition Signatures</h2>
-            <div id="signatures-list"></div>
-            <button id="close-signatures-popup">Close</button>
         </div>
     </div>
 
