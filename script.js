@@ -5,10 +5,8 @@ const petitions = [
         name: "End the Immoral Practice of GoGuardian and Other Monitoring Devices on Students",
         description: "Schools are infringing on students' privacy by unjustifiably controlling their software. This approach undermines students' right to privacy and reflects a lack of trust between students and educators. We believe that students deserve to have their privacy respected and to be trusted to use educational tools responsibly.",
         signatures: [],
-        image: "privacy.jpg"
-    },
-
-
+        image: "xguradian.png"
+    }
 ];
 
 // Function to create petition cards
