@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section:nth-child(even) {
+    background-color: #fff;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #007bff, #00bfff);
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.petition-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.petition-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.petition-card:hover {
+    transform: translateY(-5px);
+}
+
+.petition-card-content {
+    padding: 20px;
+}
+
+.petition-card h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.petition-card p {
+    margin-bottom: 15px;
+}
+
+.petition-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.petition-card button:hover {
+    background-color: #0056b3;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #007bff;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+.popup-content {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.popup-content input,
+.popup-content button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+    background-color: #0056b3;
+}
+
+/* ... (previous CSS remains the same) ... */
+
+/* Signature List Styles */
+#signature-list {
+    padding: 80px 0;
+}
+
+#signature-list h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#signature-list p {
+    margin-bottom: 30px;
+}
+
+#signature-list h3 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.signature-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.signature-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.signature-list li:last-child {
+    border-bottom: none;
+}
+
+.signer-name {
+    font-weight: bold;
+}
+
+.signature-index {
+    color: #007bff;
+}
+
+#back-to-petitions {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-petitions:hover {
+    background-color: #0056b3;
+}
+
+/* Make petition cards clickable */
+.petition-card {
+    cursor: pointer;
+}
+
+/* ... (rest of the CSS remains the same) ... */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}

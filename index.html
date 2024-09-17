@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>MCRALLY | StopGoGuardian</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        
+        <!-- Meta Description for SEO -->
+        <meta name="description" content="Join MCRALLY in advocating for student privacy by stopping the misuse of GoGuardian and similar software. Support our petition to protect students' rights.">
+    
+        <!-- Open Graph Meta Tags for Social Media Sharing -->
+        <meta property="og:title" content="MCRALLY | StopGoGuardian">
+        <meta property="og:description" content="Support our cause to stop the invasion of student privacy by GoGuardian. Join the petition and make a difference.">
+        <meta property="og:type" content="website">
+        
+        <!-- Favicon -->
+        <link rel="icon" href="MCR.webp" type="image/x-icon">
+    
+        <!-- Stylesheets -->
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        
+        <!-- Additional CSS for Responsive Design -->
+        <link rel='stylesheet' type='text/css' media='screen' href='responsive.css'>
+        
+        <!-- JavaScript Files -->
+    
+        <script src='analytics.js' defer></script>
+        
+        <!-- Accessibility Features -->
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#ffffff"> <!-- Adjust to your website’s theme color -->
+    </head>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">MCRally.org</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#petitions">Petitions</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Protect Student Privacy</h1>
+                <p>Join our campaign to end invasive monitoring in schools.</p>
+                <a href="#petitions" class="cta-button">View Petition</a>
+            </div>
+        </section>
+
+        <section id="petitions">
+            <div class="container">
+                <h2>Active Petition</h2>
+                <div class="petition-grid">
+                    <!-- Petition card will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a group of concerned students, parents, and educators fighting for digital privacy rights in schools.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need support, please reach out to us via email:</p>
+                <a href="mailto:nilecommun@gmail.com" id="email-link">nilecommun@gmail.com</a>
+                <p>We look forward to hearing from you!</p>
+            </div>
+        </section>
+        
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#petitions">Petition</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="petition-popup" class="popup">
+        <div class="popup-content">
+            <h2>Sign Petition</h2>
+            <p id="petition-name"></p>
+            <p>To show your support, please send us an email at:</p>
+            <a href="mailto:nilecommun@gmail.com" id="email-link">nilecommun@gmail.com</a>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    
+
+    <div id="signatures-popup" class="popup">
+        <div class="popup-content">
+            <h2>Petition Signatures</h2>
+            <div id="signatures-list"></div>
+            <button id="close-signatures-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
