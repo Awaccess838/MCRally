@@ -133,6 +133,10 @@ h1, h2 {
     padding: 20px;
 }
 
+.petition-card img {
+    width: 150px;
+}
+
 .petition-card h3 {
     margin-bottom: 10px;
     color: #007bff;
